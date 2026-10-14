@@ -1,6 +1,6 @@
 {
   "name": "@beitroot/torrent-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Standalone CLI for downloading BitTorrent v1 magnets and .torrent files via WebTorrent.",
   "license": "MIT",
   "type": "module",
