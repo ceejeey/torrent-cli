@@ -1,6 +1,8 @@
 {
   "name": "space-torrent-cli",
   "version": "1.0.0",
+  "description": "Standalone CLI for downloading BitTorrent v1 magnets and .torrent files via WebTorrent.",
+  "license": "MIT",
   "private": true,
   "type": "module",
   "bin": {

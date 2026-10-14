@@ -36,7 +36,7 @@ export async function download(
       if (client.destroyed) return resolve(code);
       client.destroy((error) => {
         if (error) reporter.log(`Shutdown error: ${error.message}`);
-        resolve(error ? 1 : code);
+        resolve(code);
       });
     }
     function abort() {
