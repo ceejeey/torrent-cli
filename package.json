@@ -1,21 +1,36 @@
 {
-  "name": "space-torrent-cli",
+  "name": "@beitroot/torrent-cli",
   "version": "1.0.0",
   "description": "Standalone CLI for downloading BitTorrent v1 magnets and .torrent files via WebTorrent.",
   "license": "MIT",
-  "private": true,
   "type": "module",
   "bin": {
+    "torrent-cli": "./src/cli.mjs",
     "torrent-dl": "./src/cli.mjs"
   },
+  "files": [
+    "src",
+    "README.md"
+  ],
   "scripts": {
     "start": "node src/cli.mjs",
-    "test": "node --test"
+    "test": "node --test",
+    "prepublishOnly": "node --test"
   },
   "engines": {
     "node": ">=22"
   },
+  "keywords": [
+    "torrent",
+    "webtorrent",
+    "cli",
+    "download",
+    "bittorrent"
+  ],
   "dependencies": {
+    "@clack/prompts": "^1.8.1",
+    "ink": "^8.0.0",
+    "react": "^19.3.1",
     "webtorrent": "3.0.21"
   }
 }
