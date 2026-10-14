@@ -38,3 +38,4 @@ yarn test
 ```
 
 Tests use temporary files and local peers; no public torrent downloads are required.
+# torrent-cli
