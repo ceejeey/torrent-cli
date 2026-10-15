@@ -2,7 +2,7 @@ import { parseArgs } from 'node:util';
 import { resolve } from 'node:path';
 import { URL } from 'node:url';
 
-export const help = `Usage: torrent-dl [magnet-link|file.torrent] [options]
+export const help = `Usage: torrent-cli [magnet-link|file.torrent] [options]
 
 Options:
   -o, --output <folder>       Download folder (default: ./downloads)

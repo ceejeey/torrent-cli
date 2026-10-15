@@ -25,7 +25,7 @@ function formatBytes(value) {
 
 /** Fill missing options via Clack when running on a TTY. */
 export async function promptMissingOptions(partial) {
-  prompts.intro('torrent-dl');
+  prompts.intro('torrent-cli');
 
   let source = partial.source;
   if (!source) {

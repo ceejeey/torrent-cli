@@ -65,7 +65,7 @@ test('help and missing-file errors work through the executable', () => {
   const cli = new URL('../src/cli.mjs', import.meta.url);
   const help = spawnSync(process.execPath, [cli.pathname, '--help'], { encoding: 'utf8' });
   assert.equal(help.status, 0);
-  assert.match(help.stdout, /Usage: torrent-dl/);
+  assert.match(help.stdout, /Usage: torrent-cli/);
   assert.match(help.stdout, /interactive/);
   const missing = spawnSync(process.execPath, [cli.pathname, '/nonexistent/absent.torrent'], {
     encoding: 'utf8',

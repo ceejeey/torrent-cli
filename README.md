@@ -5,11 +5,13 @@ Requires Node.js 22 or newer.
 
 ## Quick start (npx)
 
+Run `npx` from outside this repo (inside it, npm resolves the local package and the bin is not linked).
+
 ```sh
-npx @beitroot/torrent-cli --help
-npx @beitroot/torrent-cli -i
-npx @beitroot/torrent-cli 'magnet:?xt=urn:btih:YOUR_INFO_HASH' -o ~/Downloads/torrents
-npx @beitroot/torrent-cli /path/to/file.torrent -o ~/Downloads/torrents
+npx -y -p @beitroot/torrent-cli torrent-cli --help
+npx -y -p @beitroot/torrent-cli torrent-cli -i
+npx -y -p @beitroot/torrent-cli torrent-cli 'magnet:?xt=urn:btih:YOUR_INFO_HASH' -o ~/Downloads/torrents
+npx -y -p @beitroot/torrent-cli torrent-cli /path/to/file.torrent -o ~/Downloads/torrents
 ```
 
 Or install globally:
@@ -17,8 +19,6 @@ Or install globally:
 ```sh
 npm install -g @beitroot/torrent-cli
 torrent-cli --help
-# same binary:
-torrent-dl --help
 ```
 
 ## Local development
@@ -28,6 +28,7 @@ cd torrent-cli
 yarn install --frozen-lockfile
 yarn start -- --help
 yarn start -- -i
+# or: node bin/torrent-cli.js -i
 ```
 
 The magnet example is a placeholder; replace it with a complete magnet link.
